@@ -137,17 +137,17 @@ export const Modal = ({ camper, closeModal }) => {
     if (email.trim() === "" || !isValidEmail(email)) {
       setIsEmailValid(false);
       isValid = false;
-      formNotification("Please enter valid email");
+      formNotification("Please enter a valid email");
     }
     if (bookingDate.trim() === "") {
       setIsBookingDateValid(false);
       isValid = false;
-      formNotification("Please enter valid date");
+      formNotification("Please enter a valid date");
     }
     if (comment.trim() === "") {
       setIsCommentValid(false);
       isValid = false;
-      formNotification("Please enter valid comment");
+      formNotification("Please enter a valid comment");
     }
 
     if (isValid) {

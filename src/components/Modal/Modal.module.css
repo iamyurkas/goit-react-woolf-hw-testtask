@@ -120,6 +120,7 @@
   text-align: center;
   font-weight: 500;
   line-height: 20px;
+  text-transform: capitalize;
 }
 
 .list_details {
