@@ -74,13 +74,14 @@ export const Modal = ({ camper, closeModal }) => {
       event.target.value = "";
     };
 
-    if (dateInputRef.current) {
-      dateInputRef.current.addEventListener("change", handleDateChange);
+    const dateInputElement = dateInputRef.current;
+    if (dateInputElement) {
+      dateInputElement.addEventListener("change", handleDateChange);
     }
 
     return () => {
-      if (dateInputRef.current) {
-        dateInputRef.current.removeEventListener("change", handleDateChange);
+      if (dateInputElement) {
+        dateInputElement.removeEventListener("change", handleDateChange);
       }
     };
   }, [dispatch]);
