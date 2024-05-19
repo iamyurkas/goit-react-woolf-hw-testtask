@@ -1,0 +1,383 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(16, 24, 40, 0.2);
+  z-index: 1200;
+}
+
+.modal {
+  width: 982px;
+  max-height: calc(90vh - 80px);
+  overflow: auto;
+  border-radius: 20px;
+  background: #fff;
+  margin: 40px auto;
+  scrollbar-width: thin;
+  scrollbar-color: #475467 transparent;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.button_close {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.button_close:hover {
+  transform: scale(1.1);
+}
+
+.name_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.secondary_info {
+  cursor: pointer;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.nav_item {
+  text-decoration-line: underline;
+  padding-bottom: 24px;
+}
+
+.nav_item {
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav_item.active::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 5px;
+  background-color: #e44848;
+}
+
+.tab {
+  padding-top: 44px;
+  border-top: 1px solid rgba(16, 24, 40, 0.2);
+}
+
+.nav_item h2 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.gallery_advert {
+  margin: 24px 0;
+  height: 310px;
+  display: flex;
+  gap: 16px;
+}
+
+.photo_advert {
+  object-fit: cover;
+}
+
+.description {
+  margin-bottom: 44px;
+  color: #475467;
+  line-height: 1.5;
+}
+
+.nav_list {
+  display: flex;
+  gap: 40px;
+}
+
+.close_icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.item_details {
+  display: flex;
+  padding: 12px 18px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  background: #f2f4f7;
+  mix-blend-mode: multiply;
+}
+
+.header_detail {
+  text-align: center;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.list_details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 44px;
+}
+
+.icons {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.vehicle_detail_wrapper {
+  padding-top: 24px;
+  border-top: 1px solid rgba(16, 24, 40, 0.2);
+}
+
+.vehicle_detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vehicle_detail:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.detail_title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.star_icon {
+  margin-right: 4px;
+}
+
+.flex_box {
+  display: flex;
+  align-items: center;
+}
+
+.rating_wrapper {
+  border-bottom: 1px solid #101828;
+}
+
+.left_container {
+  width: 430px;
+}
+
+.right_container {
+  padding: 24px;
+  border: 1px solid rgba(16, 24, 40, 0.2);
+  border-radius: 10px;
+}
+
+.tab {
+  display: flex;
+  gap: 24px;
+}
+
+.form_title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.form_subtitle {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #475467;
+  line-height: 1.5;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.form_input {
+  height: 56px;
+  width: auto;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  border: none;
+  text-indent: 18px;
+}
+
+.form_input:first-child {
+  margin-bottom: 14px;
+}
+
+.form_textarea {
+  padding-top: 18px;
+  height: 114px;
+  width: auto;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  border: none;
+  text-indent: 18px;
+  resize: none;
+}
+textarea::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.show_btn {
+  margin-top: 24px;
+  align-self: flex-start;
+  padding: 16px 60px;
+  border-radius: 200px;
+  background: #e44848;
+  color: #f7f7f7;
+  font-weight: 500;
+  letter-spacing: -0.08px;
+  border: none;
+}
+
+.show_btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(16, 24, 40, 0.2);
+}
+
+.form_date_input {
+  width: auto;
+  height: 40px;
+  padding: 0 40px 0 18px;
+  border-radius: 10px;
+  border: 1px solid #475467;
+  background-color: #f7f7f7;
+  font-size: 16px;
+  color: #475467;
+}
+
+.calendar_icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+}
+
+.form_date_input:focus + .input_label,
+.form_date_input:not(:placeholder-shown) + .input_label {
+  top: -18px;
+  left: 0;
+  font-size: 14px;
+}
+
+.input_label {
+  position: absolute;
+  top: 0;
+  left: 18px;
+  font-size: 16px;
+  color: #475467;
+  pointer-events: none;
+  transition: top 0.3s, left 0.3s, font-size 0.3s;
+}
+
+.datepicker_toggle {
+  position: relative;
+  width: 18px;
+  height: 15px;
+}
+
+.datepicker_toggle_button {
+  position: absolute;
+  left: 340px;
+  top: 33px;
+  width: 20px;
+  height: 20px;
+}
+
+.datepicker_input {
+  position: absolute;
+  left: 340px;
+  top: 36px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.datepicker_input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.relative_container {
+  position: relative;
+}
+
+.text_input {
+  margin-bottom: 14px;
+  height: 56px;
+  width: auto;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  border: none;
+  text-indent: 18px;
+}
+
+.initials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  width: 60px;
+  height: 60px;
+  margin-right: 12px;
+  color: #e44848;
+  background-color: #f2f4f7;
+  border-radius: 50%;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.star_icon {
+  width: 16px;
+  height: 16px;
+  stroke: transparent;
+}
+
+.reviewer_name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  align-self: left;
+}
+
+.rating_name_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.rating_container:last-child {
+  margin-top: 24px;
+}
+
+.reviewer_comment {
+  color: #475467;
+  line-height: 1.5;
+}

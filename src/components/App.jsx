@@ -1,16 +1,29 @@
-export const App = () => {
+import React, { Suspense, lazy } from 'react';
+import { Provider } from 'react-redux';  
+import { Routes, Route, Navigate } from 'react-router-dom';
+
+import store from '../redux/store';  
+import Main from '../layouts/Main';
+
+const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
+const Favorites = lazy(() => import('../pages/Favorites/Favorites'));
+
+const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <Provider store={store}>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Main />}>
+              <Route index element={<HomePage />} />
+              <Route path="favorites" element={<Favorites />} />
+              <Route path="*" element={<Navigate replace to="/" />} />
+            </Route>
+          </Routes>
+        </Suspense>
+      </Provider>
+    </>
   );
 };
+
+export default App;

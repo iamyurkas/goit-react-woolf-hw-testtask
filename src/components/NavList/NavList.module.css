@@ -1,0 +1,36 @@
+.navList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  gap: 60px;
+  margin: 0;
+  padding: 20px 0 20px 20px;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navItem a {
+  position: relative;
+  color: #101828;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #101828;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #e44848;
+  text-decoration: underline;
+}
+
+.navItem .activeLink {
+  color: #e44848;
+}

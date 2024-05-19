@@ -1,10 +1,29 @@
 @import-normalize; /* bring in normalize.css styles */
 
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/Inter-Regular.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/Inter-Medium.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/Inter-Bold.ttf') format('woff2');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,4 +31,28 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ul {
+  list-style: none;
+}
+
+ul,
+h1,
+h2,
+h3,
+span,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.Error {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #e44848;
+  border: 1px solid #e44848;
+  color: #f7f7f7;
+  border-radius: 7px;
+  text-align: center;
 }
