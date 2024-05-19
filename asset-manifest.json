@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/goit-react-woolf-hw-testtask/static/css/main.c729f5e5.css",
-    "main.js": "/goit-react-woolf-hw-testtask/static/js/main.61ce55e8.js",
-    "static/css/965.c7d47c20.chunk.css": "/goit-react-woolf-hw-testtask/static/css/965.c7d47c20.chunk.css",
+    "main.js": "/goit-react-woolf-hw-testtask/static/js/main.4da0aac3.js",
+    "static/css/965.6443eb78.chunk.css": "/goit-react-woolf-hw-testtask/static/css/965.6443eb78.chunk.css",
     "static/js/965.7b641a7f.chunk.js": "/goit-react-woolf-hw-testtask/static/js/965.7b641a7f.chunk.js",
-    "static/css/146.aad1ea8d.chunk.css": "/goit-react-woolf-hw-testtask/static/css/146.aad1ea8d.chunk.css",
+    "static/css/146.53a68def.chunk.css": "/goit-react-woolf-hw-testtask/static/css/146.53a68def.chunk.css",
     "static/js/146.6e04003b.chunk.js": "/goit-react-woolf-hw-testtask/static/js/146.6e04003b.chunk.js",
     "static/js/982.b7380c1a.chunk.js": "/goit-react-woolf-hw-testtask/static/js/982.b7380c1a.chunk.js",
     "static/js/903.a9142826.chunk.js": "/goit-react-woolf-hw-testtask/static/js/903.a9142826.chunk.js",
-    "static/js/666.c95b6c15.chunk.js": "/goit-react-woolf-hw-testtask/static/js/666.c95b6c15.chunk.js",
+    "static/js/666.77926efc.chunk.js": "/goit-react-woolf-hw-testtask/static/js/666.77926efc.chunk.js",
     "static/media/Inter-Bold.ttf": "/goit-react-woolf-hw-testtask/static/media/Inter-Bold.0eaf807b1cf0eceabe0f.ttf",
     "static/media/Inter-Medium.ttf": "/goit-react-woolf-hw-testtask/static/media/Inter-Medium.3f7acfe50aad7ad68548.ttf",
     "static/media/Inter-Regular.ttf": "/goit-react-woolf-hw-testtask/static/media/Inter-Regular.9ca9ba81e9dcaa12b3a1.ttf",
@@ -42,17 +42,17 @@
     "static/media/kitchen.svg": "/goit-react-woolf-hw-testtask/static/media/kitchen.d93b1361d7840c251004d2ff3fe6e046.svg",
     "static/media/close.svg": "/goit-react-woolf-hw-testtask/static/media/close.25dc3f46a342a188874fa545ced03ca2.svg",
     "main.c729f5e5.css.map": "/goit-react-woolf-hw-testtask/static/css/main.c729f5e5.css.map",
-    "main.61ce55e8.js.map": "/goit-react-woolf-hw-testtask/static/js/main.61ce55e8.js.map",
-    "965.c7d47c20.chunk.css.map": "/goit-react-woolf-hw-testtask/static/css/965.c7d47c20.chunk.css.map",
+    "main.4da0aac3.js.map": "/goit-react-woolf-hw-testtask/static/js/main.4da0aac3.js.map",
+    "965.6443eb78.chunk.css.map": "/goit-react-woolf-hw-testtask/static/css/965.6443eb78.chunk.css.map",
     "965.7b641a7f.chunk.js.map": "/goit-react-woolf-hw-testtask/static/js/965.7b641a7f.chunk.js.map",
-    "146.aad1ea8d.chunk.css.map": "/goit-react-woolf-hw-testtask/static/css/146.aad1ea8d.chunk.css.map",
+    "146.53a68def.chunk.css.map": "/goit-react-woolf-hw-testtask/static/css/146.53a68def.chunk.css.map",
     "146.6e04003b.chunk.js.map": "/goit-react-woolf-hw-testtask/static/js/146.6e04003b.chunk.js.map",
     "982.b7380c1a.chunk.js.map": "/goit-react-woolf-hw-testtask/static/js/982.b7380c1a.chunk.js.map",
     "903.a9142826.chunk.js.map": "/goit-react-woolf-hw-testtask/static/js/903.a9142826.chunk.js.map",
-    "666.c95b6c15.chunk.js.map": "/goit-react-woolf-hw-testtask/static/js/666.c95b6c15.chunk.js.map"
+    "666.77926efc.chunk.js.map": "/goit-react-woolf-hw-testtask/static/js/666.77926efc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c729f5e5.css",
-    "static/js/main.61ce55e8.js"
+    "static/js/main.4da0aac3.js"
   ]
 }
