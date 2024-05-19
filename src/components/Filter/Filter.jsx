@@ -22,7 +22,7 @@ export const Filter = () => {
   const campers = useSelector(state => state.favorite.campers);
 
   const [isInputFocused, setIsInputFocused] = useState(false);
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue] = useState('');
   const [cityFilter, setCityFilter] = useState('');
   const [equipmentFilters, setEquipmentFilters] = useState([]);
   const [selectedType, setSelectedType] = useState(null);
