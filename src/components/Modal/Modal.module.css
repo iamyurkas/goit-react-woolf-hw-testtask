@@ -226,8 +226,6 @@
   border: none;
   text-indent: 18px;
   resize: none;
-}
-textarea::placeholder {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
 }
