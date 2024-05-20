@@ -1,33 +1,21 @@
-import React, { useEffect, useState } from 'react';
-
 import { NavList } from '../../components/NavList/NavList';
-import { Filter } from '../../components/Filter/Filter';
-import { CardInfo } from '../../components/CardInfo/CardInfo';
-import { Loader } from '../../components/Loader/Loader';
+import { Link } from 'react-router-dom';
 
 import styles from './HomePage.module.css';
+import camper_img from "../../assets/images/image.png";
 
 const Home = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false); 
-    }, 800);
-  }, []);
-
-  
   return (
     <div>
       <NavList/> 
-      {loading ? (
-        <Loader />
-      ) : (
-      <div className={styles.home_wrapper}>
-      <Filter/>
-      <CardInfo/>
-      </div>
-    )}
+        <div className={styles.home_wrapper}> 
+          <img src={camper_img} alt="Campers" width="625" height="222"/>
+          <div>
+            <Link to="/catalog" className={styles.hero_btn}>
+              Buy a camper
+            </Link>
+          </div>
+        </div>
     </div>
   );
 };

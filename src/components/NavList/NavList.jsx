@@ -14,6 +14,11 @@ export const NavList = () => {
             </NavLink>
           </li>
           <li className={styles.navItem}>
+            <NavLink to="/catalog" className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
+              Catalog
+            </NavLink>
+          </li>
+          <li className={styles.navItem}>
             <NavLink to="/favorites" className={({ isActive }) => isActive ? styles.activeLink : styles.link}>
               Favorites
             </NavLink>
